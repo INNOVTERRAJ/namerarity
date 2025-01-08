@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'frontend')));
 
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/names")
+mongoose.connect("mongodb+srv://rajaryan:RoIGusJqVNJZduQR@cluster.9jubi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster")
   .then(() => {
     console.log("Connected to MongoDB");
   })
